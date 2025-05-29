@@ -128,9 +128,59 @@
 // console.log(`hasil dari ${a} * ${b} = ${hasil}`)
 // console.log(`hasil dari ${a} % ${b} = ${hasil}`);
 
+// //luas segitiga
+// let a = prompt("Masukkan alas")
+// let b = prompt("Masukkan tinggi")
+// let luas = (a * b) / 2;
 
-let a = prompt("Masukkan alas")
-let b = prompt("Masukkan tinggi")
-let luas = (a * b) / 2;
+// alert(`Hasil hasil luasnya ${luas}`)
 
-alert(`Hasil hasil luasnya ${luas}`)
+
+// operator penugasan
+
+// let a = 10;
+// a += 5;
+// a -= 3;
+// a *= 2;
+
+// console.log(`hasil penugasan a *= 5 adalah ${a}`)
+
+//operator perbandingan
+// > lebih besar dari
+// < lebih kecil dari
+// >= lebih besar dari atau sama dengan
+// <= lebuh kecil dari atau sama dengan
+// == sama dengan
+// === sama dengan (strict equality)(tipenya harus sama jg)
+// != tdk sama dengan
+// !== tdk sama dengan (strict equality)(tipenya harus sama jg)
+
+
+// operator logika
+// && (AND) true jika sama kedua operand true
+// || (OR) true jika salah satu operand true
+// ! (NOT) membalik nilai boolean
+
+// let dewasa = true;
+// let bawamobil = true;
+// let punyasim = false;
+
+// console.log('Umurnya sudah cukup?', dewasa && bawamobil);
+
+// console.log('Boleh bawa mobil?', dewasa && bawamobil && punyasim);
+
+// console.log("boleh bawa mobil?", dewasa || punyasim)
+
+// console.log('kamu punya sim?', !punyasim)
+
+
+let saya = {
+    nama : "Fathin",
+    dewasa : false,
+    punyatiket : false,
+    punyaktp : false
+}
+
+console.log(`${saya.nama} punya tiket?,`, !saya.punyatiket)
+console.log(`${saya.nama} boleh nonton?,`, !saya.punyatiket && !saya.dewasa)
+console.log(`${saya.nama} punya masuk?,`, saya.dewasa || saya.punyaktp || saya.punyatiket  )
